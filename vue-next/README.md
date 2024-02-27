@@ -2,19 +2,17 @@
 
 > Apron Design (Vue3) 的一个分支组件，用于在页面上生产一个 qrcode 二维码
 
-Version: 1.0.0
-
 ## 使用
 可前往 [二维码 Qrcode - 组件 | Apron Design for Vue3](https://vue-next.apron.design/components/qrcode.html) 查看。
 
 以下是一个简单的 demo：
 ```vue
 <script setup>
-import { Qrcode } from '@qr-apron/vue-next'
+import { QrCode } from '@qr-apron/vue-next'
 </script>
 
 <template>
-  <qrcode text="this is a qrcode"></qrcode>
+  <QrCode text="this is a qrcode"></QrCode>
 </template>
 ```
 

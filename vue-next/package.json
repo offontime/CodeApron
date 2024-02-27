@@ -1,7 +1,7 @@
 {
   "name": "@qr-apron/vue-next",
-  "version": "1.0.0",
-  "main": "lib/@qr-apron/vue-next.js",
+  "version": "1.0.3",
+  "main": "./lib/@qr-apron/vue-next.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/offontime/QrApron.git"

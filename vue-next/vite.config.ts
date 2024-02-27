@@ -24,7 +24,7 @@ export default defineConfig({
       fileName: '@qr-apron/vue-next'
     },
     rollupOptions: {
-      external: ['vue', 'less-loader', 'less'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue'
