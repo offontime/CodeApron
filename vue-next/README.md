@@ -1,6 +1,8 @@
-# @qr-apron/vue-next
+# @code-apron/vue-next
 
-> Apron Design (Vue3) 的一个分支组件，用于在页面上生产一个 qrcode 二维码
+> Apron Design (Vue3) 的一个分支组件，用于在页面上生产各种码。
+>
+> （原始命名为 @qr-apron，但后续将会继续开发各种其他类型的条形码、二维码，因此更名为 @code-apron）
 
 ## 使用
 可前往 [二维码 Qrcode - 组件 | Apron Design for Vue3](https://vue-next.apron.design/components/qrcode.html) 查看。
@@ -8,7 +10,7 @@
 以下是一个简单的 demo：
 ```vue
 <script setup>
-import { QrCode } from '@qr-apron/vue-next'
+import { QrCode } from '@code-apron/vue-next'
 </script>
 
 <template>
@@ -24,11 +26,11 @@ import { QrCode } from '@qr-apron/vue-next'
 ## 新功能开发：
 
 ### 步骤
-1. 前往 [Github 项目主页](https://github.com/offontime/QrApron) 克隆代码。
-2. 路由进 `QrApron/vue-next` 安装依赖
+1. 前往 [Github 项目主页](https://github.com/offontime/CodeApron) 克隆代码。
+2. 路由进 `CodeApron/vue-next` 安装依赖
     ```sh
-    git clone git@github.com:offontime/QrApron.git
-    cd QrApron/vue-next
+    git clone git@github.com:offontime/CodeApron.git
+    cd CodeApron/vue-next
     yarn
     ```
 3. 启动项目

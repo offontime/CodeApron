@@ -20,8 +20,8 @@ export default defineConfig({
     outDir: 'lib',
     lib: {
       entry: path.resolve(__dirname, './src/components/index.ts'),
-      name: '@qr-apron/vue-next',
-      fileName: '@qr-apron/vue-next'
+      name: '@code-apron/vue-next',
+      fileName: '@code-apron/vue-next'
     },
     rollupOptions: {
       external: ['vue'],
