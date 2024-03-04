@@ -7,14 +7,19 @@
 ## 使用
 可前往 [二维码 Qrcode - 组件 | Apron Design for Vue3](https://vue-next.apron.design/components/qrcode.html) 查看。
 
+目前已开放二维码（链接为文档）：
+- [二维码 QRcode - 组件 | Apron Design for Vue3](https://vue-next.apron.design/components/qrcode.html) 
+- [二维码 Pdf417 - 组件 | Apron Design for Vue3](https://vue-next.apron.design/components/pdf417.html) 
+
 以下是一个简单的 demo：
 ```vue
 <script setup>
-import { QrCode } from '@code-apron/vue-next'
+import CodeApron from '@code-apron/vue-next'
+Vue.use(CodeApron)
 </script>
 
 <template>
-  <QrCode text="this is a qrcode"></QrCode>
+  <ap-qrcode text="this is a qrcode"></ap-qrcode>
 </template>
 ```
 
@@ -41,6 +46,7 @@ import { QrCode } from '@code-apron/vue-next'
     ```
 
 ### 指南
-1. 本项目使用基础包 `qrcode` 版本 ^1.5.3 作为渲染工具。在后续开发中如果有实际需求，则会根据情况升级此包。
-2. 脚手架使用 vite 搭建，vue3-ts 编写。
-3. 参与贡献请先阅读：[参与开发](https://vue-next.apron.design/docs/developer.html) 和 [如何优雅地在 Github 上贡献代码](https://vue-next.apron.design/docs/developer.html)
+1. 本项目 QRcode 使用基础包 `qrcode` 版本 ^1.5.3 作为渲染工具。在后续开发中如果有实际需求，则会根据情况升级此包。
+2. 本项目 pdf417 使用 tcpdf library，GitHub：https://github.com/bkuzmic/pdf417-js
+3. 脚手架使用 vite 搭建，vue3-ts 编写。
+4. 参与贡献请先阅读：[参与开发](https://vue-next.apron.design/docs/developer.html) 和 [如何优雅地在 Github 上贡献代码](https://vue-next.apron.design/docs/developer.html)

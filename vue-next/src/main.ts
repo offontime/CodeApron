@@ -1,6 +1,7 @@
 import './assets/main.css'
-
+import CodeApron from './components'
 import { createApp } from 'vue'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(CodeApron)
+app.mount('#app')

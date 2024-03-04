@@ -2,7 +2,11 @@
 > 正在开发
 
 ## 简介
-Apron Design 的一个分支组件，用于在页面上生产一个 qrcode 二维码
+Apron Design 的一个分支组件，用于在页面上生产一个二维码
+
+已开放二维码：
+- QRcode
+- pdf417
 
 ## Packages
 | 名称 | Github 地址 | NPM 地址 |

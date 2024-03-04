@@ -1,7 +1,6 @@
 <template>
   <div class="apron-qr-code">
-    <canvas v-if="mode === 'canvas'" ref="renderCanvas" />
-    <img v-else :src="dataUrl" />
+    <img :src="dataUrl" />
   </div>
 </template>
 
@@ -16,10 +15,6 @@ const props = defineProps({
   text: {
     type: String,
     default: 'Apron Design QrCode'
-  },
-  mode: {
-    type: String,
-    default: 'image' // use image/canvas
   },
   size: {
     type: [String, Number],
@@ -43,8 +38,6 @@ const emits = defineEmits({
 
 const dataUrl = ref('')
 
-const renderCanvas = ref(null)
-
 
 function makeQrCode (val) {
   const opts = {
@@ -56,23 +49,15 @@ function makeQrCode (val) {
       dark: props.color
     }
   }
-  if (props.mode === 'canvas') {
-    // qrcode.toCanvas(renderCanvas, 'qrVal.value', (err) => {
-    //   if (err) {
-    //     alert(err)
-    //   }
-    // })
-  } else {
-    qrcode.toDataURL(val || props.text, opts, (err, url) => {
-      if (err) {
-        // 报错
-        alert(err)
-      }
-      else {
-        dataUrl.value = url
-      }
-    })
-  }
+  qrcode.toDataURL(val || props.text, opts, (err, url) => {
+    if (err) {
+      // 报错
+      alert(err)
+    }
+    else {
+      dataUrl.value = url
+    }
+  })
 }
 
 makeQrCode(text.value)
@@ -82,6 +67,7 @@ makeQrCode(text.value)
 <style lang="less">
 .apron-qr-code {
   position: relative;
+  padding: 0!important;
   & > * {
     width: 100%;
     height: 100%;

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { QrCode } from './components/'
 const val = '敏捷的狐狸跳过了懒惰的狗。'
 let qrValue = val
 setInterval(() => {
@@ -9,5 +8,6 @@ setInterval(() => {
 </script>
 
 <template>
-  <qr-code :text="qrValue" color="#f90"></qr-code>
+  <ap-qrcode :text="qrValue" color="#f90"></ap-qrcode>
+  <ap-pdf417 text="64387916487312" color="#f90"></ap-pdf417>
 </template>
